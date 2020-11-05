@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="img/icon.jpg" type="image/gif" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearthstone Arena Hero Card</title>
+    <style>
+        .head {
+            background-color: #003344;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        
+        li:last-child {
+            border-right: none;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #4CAF50;
+        }
+        
+        html {
+            min-height: 100%;
+            background-image: url(https://cutewallpaper.org/21/hearthstone-background/Custom-Hearthstone-Video-Transition-Animation.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: "Lucida Console", Courier, monospace;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        /* Caption text */
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+        
+        .content {
+            width: 1650px;
+            margin-left: auto;
+            margin-right: auto;
+            border: black;
+        }
+        
+        .box {
+            width: 800px;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: auto;
+            text-align: center;
+            border-image: 1px;
+            border: 10px solid black;
+        }
+        
+        .title {
+            font-weight: bold;
+            font-size: 40px;
+        }
+        
+        .word {
+            color: blanchedalmond;
+        }
+        
+        img {
+            width: 170px;
+        }
+        
+        .footer {
+            background-color: #777;
+            padding: 5px;
+            text-align: center;
+            color: white
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;">
+    <div class="head">
+        Welcome to Hearthstone Arena
+    </div>
+
+    <ul>
+        <li><a class="active" href="homepage.html">Homepage</a></li>
+        <li><a href="arena.html">Arena</a></li>
+        <li><a href="#contact">Hero Card</a></li>
+        <li style="float:right"><a href="aboutHearthstone.html">About Hearthstone</a></li>
+    </ul>
+
+    </div>
+
+
+    <div class="content">
+        <div class="box">
+            <div class="title">Warrior Top 3 Cards</div>
+            <div><img src="img/warriorhero.jpg" alt=""></div>
+            <img src="img/warriorcard01.webp" alt="">
+            <img src="img/warriorcard02.png" alt="">
+            <img src="img/warriorcard03.png" alt="">
+        </div>
+        <div class="box">
+            <div class="title">Priest Top 3 Cards</div>
+            <div><img src="img/priesthero.png" alt=""></div>
+            <img src="img/priestCard01.png" alt="">
+            <img src="img/priestCard02.png" alt="">
+            <img src="img/priestCard03.png" alt="">
+        </div>
+        <div class="box">
+            <div class="title">Hunter Top 3 Cards</div>
+            <div><img src="img/hunterhero.png" alt=""></div>
+            <img src="img/huntercard01.png" alt="">
+            <img src="img/huntercard02.png" alt="">
+            <img src="img/huntercard03.png" alt="">
+        </div>
+        <div class="box">
+            <div class="title">Shaman Top 3 Cards</div>
+            <div><img src="img/shamanhero.jpg" alt=""></div>
+            <img src="img/shamancard01.png" alt="">
+            <img src="img/shamancard02.png" alt="">
+            <img src="img/shamancard03.png" alt="">
+        </div>
+        <div class="box">
+            <div class="title">Druid Top 3 Cards</div>
+            <div><img src="img/druidhero.png" alt=""></div>
+            <img src="img/druidcard01.png" alt="">
+            <img src="img/druidcard02.png" alt="">
+            <img src="img/druidcard03.png" alt="">
+        </div>
+        <div class="box">
+            <div class="title">Paladin Top 3 Cards</div>
+            <div><img src="img/paladinhero.jpg" alt=""></div>
+            <img src="img/paladincard01.png" alt="">
+            <img src="img/paladincard02.png" alt="">
+            <img src="img/paladincard03.png" alt="">
+        </div>
+        <div class="box">
+            <div class="title">Mage Top 3 Cards</div>
+            <div><img src="img/magehero.png" alt=""></div>
+            <img src="img/magecard01.png" alt="">
+            <img src="img/magecard02.png" alt="">
+            <img src="img/magecard03.png" alt="">
+        </div>
+        <div class="box">
+            <div class="title">Warlock Top 3 Cards</div>
+            <div><img src="img/warlockhero.png" alt=""></div>
+            <img src="img/warlockcard01.png" alt="">
+            <img src="img/warlockcard02.png" alt="">
+            <img src="img/warlockcard03.png" alt="">
+        </div>
+        <div class="box">
+            <div class="title">Rogue Top 3 Cards</div>
+            <div><img src="img/roguehero.jpg" alt=""></div>
+            <img src="img/roguecard01.png" alt="">
+            <img src="img/roguecard02.png" alt="">
+            <img src="img/roguecard03.png" alt="">
+        </div>
+        <div class="box">
+            <div class="title">Demon Hunter Top 3 Cards</div>
+            <div><img src="img/demonhunterhero.png" alt=""></div>
+            <img src="img/demonhuntercard01.png" alt="">
+            <img src="img/demonhuntercard02.png" alt="">
+            <img src="img/demonhuntercard03.png" alt="">
+        </div>
+    </div>
+    <footer>
+
+        <p class="footer">&copy;lchang2ISOM215.github.io (Creation date:11/5/2020)</p>
+
+    </footer>
+</body>
+
+</html>
