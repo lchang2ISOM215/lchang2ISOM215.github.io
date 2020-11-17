@@ -28,6 +28,28 @@
             font-family: "Lucida Console", Courier, monospace;
         }
         
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 100px;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+        
+        .video {
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 50%;
+            min-height: 50%;
+        }
+        
         ul {
             list-style-type: none;
             margin: 0;
@@ -67,23 +89,6 @@
             text-align: center;
             color: white
         }
-        
-        img {
-            display: block;
-            margin: 0 auto;
-            width: 500px;
-        }
-        
-        h1 {
-            text-align: center;
-            color: blanchedalmond;
-        }
-        
-        .map {
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
     </style>
 
 </head>
@@ -91,7 +96,7 @@
 <body style="margin: 0px;">
     <header>
         <div class="head">
-            Welcome to About Hearthstone
+            Welcome to Hearthstone Arena Helper
         </div>
     </header>
 
@@ -101,24 +106,20 @@
         <li><a href="herocard.html">Hero Card</a></li>
         <li style="float:right"><a href="aboutHearthstone.html">About Hearthstone</a></li>
     </ul>
+    <audio src="mp4/hsmusic.mp3" autoplay></audio>
+    <form>
 
-    <div class="bzlogo">
-        <img src="img/bzlogo.png" alt="">
-    </div>
-    <br>
+        <div id="nav-placeholder">
+            <div class="hero">
+                <h1>Hearthstone Arena Helper</h1>
+                <video class="video" src="mp4/hsv.mp4" autoplay muted loop></video>
+            </div>
+    </form>
 
-    <h1>Blizzard Entertainment Headquarter</h1>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13283.860210610153!2d-117.7671531!3d33.6580674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb7104743d635730!2sBlizzard%20Entertainment!5e0!3m2!1szh-TW!2sus!4v1604552975932!5m2!1szh-TW!2sus"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-
-    <h1>Download Hearthstone and enjoy it on your iphone</h1>
-    <img src="img/qr-code.png" alt="">
     <footer>
 
-        <p class="footer ">&copy;lchang2ISOM215.github.io (Creation date:11/5/2020)</p>
-
+        <p class="footer">&copy;lchang2ISOM215.github.io</p>
+        <p class="footer">Creation date:11/5/2020</p>
     </footer>
 
 </body>
