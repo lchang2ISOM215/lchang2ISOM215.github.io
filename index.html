@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon.jpg" type="image/gif" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearthstone Arena Helper</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .head {
+            background-color: #003344;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        html {
+            min-height: 100%;
+            background-image: url(https://cutewallpaper.org/21/hearthstone-background/Custom-Hearthstone-Video-Transition-Animation.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: "Lucida Console", Courier, monospace;
+        }
+        
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 100px;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+        
+        .video {
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 50%;
+            min-height: 50%;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        
+        li:last-child {
+            border-right: none;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #111;
+        }
+        
+        .footer {
+            background-color: #777;
+            padding: 5px;
+            text-align: center;
+            color: white
+        }
+    </style>
+
+</head>
+
+<body style="margin: 0px;">
+    <header>
+        <div class="head">
+            Welcome to Hearthstone Arena Helper
+        </div>
+    </header>
+
+    <ul>
+        <li><a class="active" href="index.html">Homepage</a></li>
+        <li><a href="arena.html">Arena</a></li>
+        <li><a href="herocard.html">Hero Card</a></li>
+        <li style="float:right"><a href="aboutHearthstone.html">About Hearthstone</a></li>
+    </ul>
+    <audio src="mp4/hsmusic.mp3" autoplay></audio>
+    <form>
+
+        <div id="nav-placeholder">
+            <div class="hero">
+                <h1>Hearthstone Arena Helper</h1>
+                <video class="video" src="mp4/hsv.mp4" autoplay muted loop></video>
+            </div>
+    </form>
+
+    <footer>
+
+        <p class="footer">&copy;lchang2ISOM215.github.io</p>
+        <p class="footer">Creation date:11/5/2020</p>
+    </footer>
+
+</body>
+
+</html>
